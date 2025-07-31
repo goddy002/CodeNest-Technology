@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.0;
+    color: #333;
+}
+
+header{
+    background: #003366;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+}
+
+#container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.8rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-toggle{
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+#hero{
+    background: #e6f0ff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#hero h2{
+    color: #003366;
+    font-size: 2.5rem;
+}
+
+#hero p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #fff;
+    background: #003366;
+    padding: 0.50rem 0.3rem;
+    border-radius: 5px;
+}
+
+#course{
+    background: #f9f9f9;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.course-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.department{
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.department:hover{
+    box-shadow: 0 4px 8px rgba(0,0,0,0,1);
+}
+
+footer{
+    background: #003366;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* about page */
+main{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.sect{
+    background-color: #fff;
+    color: black;
+    border: none;
+}
+
+h2{
+    color: #003366;
+}
+
+#section{
+    margin-bottom: 2.5rem;
+}
+
+/* media query */
+@media (max-width: 900px) {
+    .menu-toggle{
+        display: block;
+        color: #fff;
+    }
+
+    nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #003366;
+        display: none;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    nav.active{
+        display: flex;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODENEST</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <header>
+        <div id="container">
+            <h1 class="logo">CodeNest Technologies</h1>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776</div>
+
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admission.html">Admissions</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            
+        </div>
+    </header>
+
+    <section id="hero">
+        <div id="container">
+            <h2>Welcome to CodeNest Technologies</h2>
+            <p>Your Gateway to a World of Tech Excellence</p>
+            <a href="admission.html" class="btn">Appy Now</a>
+        </div>
+    </section>
+
+    <section id="course">
+        <div id="container">
+            <h2>Our Tech Courses</h2>
+            <div class="course-list">
+                <div class="department">
+                    <h3>Software Egineering</h3>
+                </div>
+
+                <div class="department">
+                    <h3>Computer Science</h3>
+                </div>
+
+                <div class="department">
+                    <h3>Data Science</h3>
+                </div>
+
+                <div class="department">
+                    <h3>Web Development</h3>
+                </div>
+
+                <div class="department">
+                    <h3>Cyber Security</h3>
+                </div>
+
+                <div class="department">
+                    <h3>Information Technology</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="">
+            <p>&copy; 2025 CodeNest Technologies. All rights reversed.</p>
+        </div>
+    </footer>
+
+    <script>
+        
+        function toggleMenu(){
+            const nav=document.getElementById('main-nav');
+            nav.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
